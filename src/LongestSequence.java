@@ -12,8 +12,10 @@ public class LongestSequence {
         int longest = 0;
         int n = arr.length;
         Set<Integer> tmp = new HashSet<>();
-        for (int i = 0; i < n; i++) {
+        int i = 0;
+        while (i < n) {
             tmp.add(arr[i]);
+            i++;
         }
 
         for (int x : tmp) {
